@@ -1,0 +1,23 @@
+app__menu {
+    display: flexbox;
+    background: var(--color-black);
+    padding: 1rem 2rem;
+}
+
+.app__menu h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app__menu button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.app__menu button :hover{
+    color: var(--color-black);
+}
+
