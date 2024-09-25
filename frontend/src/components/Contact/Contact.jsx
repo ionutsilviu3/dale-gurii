@@ -22,7 +22,6 @@ const Contact = () => {
             <div>
             <img src={images.scheduleIcon}/>
             <h1 className="p__cormorant">Program</h1>
-            <h2 className="p__cormorant">Luni - Duminica</h2>
             <h2 className="p__cormorant">10:00 - 21:00</h2>
             </div>
             </div>

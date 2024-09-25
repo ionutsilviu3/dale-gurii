@@ -11,7 +11,7 @@ const Galery = () => {
 
             <div className="app__galery-item">
                 <img src={images.galeryFood1} alt="Fructele de mare" />
-                <h1 className="p__opensans">Fructele fresh de mare</h1>
+                <h1 className="p__opensans">Fructe fresh de mare</h1>
             </div>
 
             <div className="app__galery-item">

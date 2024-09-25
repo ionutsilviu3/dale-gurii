@@ -1,23 +1,36 @@
-app__menu {
-    display: flexbox;
-    background: var(--color-black);
+.app__menu {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
     padding: 1rem 2rem;
-}
-
-.app__menu h1 {
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
     margin-left: auto;
     margin-right: auto;
 }
 
-.app__menu button {
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    color: var(--color-white);
-    background-color: var(--color-orange);
+.app__menu h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 2rem;
 }
 
-.app__menu button :hover{
-    color: var(--color-black);
+
+
+.app__menu a {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background: var(--color-orange);
+        padding: 14px;
+        text-align: center;
+        border-radius: 16px;
+        color: var(--color-white);
 }
 
+.app__menu a:hover {
+    filter: brightness(80%);
+}
+
+.app__menu a:focus {
+    filter: brightness(30%);
+}
