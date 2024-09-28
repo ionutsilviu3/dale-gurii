@@ -5,7 +5,7 @@ import Image from "next/image";
 const Header = () => {
     return (
         <div id="home" className={styles.header}>
-            <Image src={images.food} className={styles.image} alt="Food"/>
+            <Image src={images.food} className={styles.image} priority={true} alt="Food"/>
         </div>
     );
 };
