@@ -1,24 +1,21 @@
-import food from '../assets/food.jpg';
-import relax from '../assets/relax.jpg';
-import employee from '../assets/employee.jpg';
-import logo from '../assets/logo.png'
-import reservation from '../assets/reservation.jpg'
-import callIcon from '../assets/callIcon.svg'
-import adressIcon from '../assets/adressIcon.svg'
-import scheduleIcon from '../assets/scheduleIcon.svg'
-import facebookIcon from '../assets/facebookIcon.png'
-import instagramIcon from '../assets/instagramIcon.webp'
-import galeryFood1 from '../assets/galeryFood1.jpg'
-import galeryFood2 from '../assets/galeryFood2.jpg'
-import galeryFood3 from '../assets/galeryFood3.jpg'
-import galeryFood4 from '../assets/galeryFood4.jpg'
-import menu from '../assets/menu.jpg'
+import food from '../../public/food.webp';
+import relax from '../../public/relax.webp';
+import logo from '../../public/logo.png'
+import reservation from '../../public/reservation.webp'
+import callIcon from '../../public/callIcon.svg'
+import adressIcon from '../../public/adressIcon.svg'
+import scheduleIcon from '../../public/scheduleIcon.svg'
+import facebookIcon from '../../public/facebookIcon.png'
+import instagramIcon from '../../public/instagramIcon.webp'
+import galeryFood1 from '../../public/galeryFood1.webp'
+import galeryFood2 from '../../public/galeryFood2.webp'
+import galeryFood3 from '../../public/galeryFood3.webp'
+import galeryFood4 from '../../public/galeryFood4.webp'
 
 
 export default {
     food,
     relax,
-    employee,
     logo,
     reservation,
     callIcon,
@@ -30,5 +27,4 @@ export default {
     galeryFood2,
     galeryFood3,
     galeryFood4,
-    menu
 };

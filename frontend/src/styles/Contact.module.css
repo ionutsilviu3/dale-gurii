@@ -1,0 +1,55 @@
+.contact {
+    width: 100%; /* Use full width on mobile */
+    max-width: 1200px; /* Optional: limit the max width for larger screens */
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout on desktop */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 2rem; /* Add padding for better spacing */
+    margin-top: 150px; /* Top margin to separate from other content */
+    margin-bottom: 150px; /* Top margin to separate from other content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact > div {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 10px; /* Add spacing between sections */
+    flex: 1; /* Allow items to grow equally */
+}
+
+.image {
+    width: 50px; /* Icon size */
+    height: 50px;
+    margin-bottom: 10px; /* Space below icon */
+}
+
+.contact h2 {
+    margin-top: 5px; /* Space above h2 */
+    font-size: larger; /* Font size for schedule */
+    text-align: center; /* Center text */
+}
+
+.contactClickable a {
+    text-decoration: none; /* Remove underline from links */
+    text-align: center; /* Center link text */
+}
+
+.contactClickable a:hover {
+    color: var(--color-orange); /* Color change on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .contact > div {
+        width: 100%; /* Allow items to take full width */
+        margin: 15px 0; /* Add spacing between sections */
+    }
+}

@@ -1,0 +1,29 @@
+.galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+    grid-gap: 2rem; /* Adds space between grid items */
+    justify-items: center; /* Centers items in their grid cells */
+    padding: 3rem;
+}
+
+.galery h1 {
+    text-align: center;
+    font-size: 32px;
+    grid-column: span 2; /* Makes the main title span across both columns */
+    margin-bottom: 2rem;
+}
+
+.galeryItem {
+    text-align: center; /* Center the text and image inside each grid item */
+}
+
+.galeryImage {
+    width: 100%; /* Ensure the image fills the grid cell */
+    max-width: 300px; /* Set a reasonable max-width for the images */
+    height: auto; /* Maintain aspect ratio of the images */
+}
+
+.galeryItem h1 {
+    margin-top: 1rem; /* Add some space between the image and its corresponding title */
+    font-size: 1.2rem;
+}
