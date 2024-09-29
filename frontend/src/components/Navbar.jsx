@@ -41,10 +41,10 @@ const Navbar = () => {
       </div>
 
       <ul className={styles.links}>
-        <li className="opensans"><Link href="#home">Acasa</Link></li>
-        <li className="opensans"><Link href="#galery">Galerie</Link></li>
-        <li className="opensans"><Link href="#menu">Meniu</Link></li>
-        <li className="opensans"><Link href="#contact">Rezervare</Link></li>
+        <li className="opensans-navbar"><Link href="#home">Acasa</Link></li>
+        <li className="opensans-navbar"><Link href="#galery">Galerie</Link></li>
+        <li className="opensans-navbar"><Link href="#menu">Meniu</Link></li>
+        <li className="opensans-navbar"><Link href="#contact">Rezervare</Link></li>
       </ul>
 
       <div className={styles.smallscreen}>

@@ -78,7 +78,6 @@
 
 
 .overlayClose {
-    font-size: 27px;
     color: var(--color-orange);
     cursor: pointer;
     position: absolute;
@@ -96,7 +95,6 @@
     margin: 2rem 0;
     cursor: pointer;
     color: var(--color-white);
-    font-size: 2rem;
     font-family: var(--font-base);
     transition: color 0.3s ease; /* Smooth transition on hover */
 }

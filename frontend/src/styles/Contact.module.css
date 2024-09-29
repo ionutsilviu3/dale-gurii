@@ -6,8 +6,7 @@
     justify-content: space-between; /* Space items evenly */
     align-items: center; /* Center items vertically */
     padding: 2rem; /* Add padding for better spacing */
-    margin-top: 150px; /* Top margin to separate from other content */
-    margin-bottom: 150px; /* Top margin to separate from other content */
+    margin-top: 32px; /* Top margin to separate from other content */
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,8 +26,6 @@
 }
 
 .contact h2 {
-    margin-top: 5px; /* Space above h2 */
-    font-size: larger; /* Font size for schedule */
     text-align: center; /* Center text */
 }
 
@@ -41,6 +38,10 @@
     color: var(--color-orange); /* Color change on hover */
 }
 
+.contact h1 {
+    padding-bottom: 6px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .contact {
@@ -50,6 +51,7 @@
 
     .contact > div {
         width: 100%; /* Allow items to take full width */
+        padding-bottom: 30px;
         margin: 15px 0; /* Add spacing between sections */
     }
 }

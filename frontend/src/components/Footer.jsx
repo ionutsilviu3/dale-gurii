@@ -10,7 +10,7 @@ const Footer = () => {
             <Link href="https://www.facebook.com/ceaunulmic"> <Image src={images.facebookIcon} className={styles.image} alt="Facebook"/> </Link>
             <Link href="https://www.instagram.com/ceaunulmic"> <Image src={images.instagramIcon} className={styles.image} alt="Instagram"/> </Link>
         </div>
-        <h1 className="opensans">
+        <h1 className="opensans-footer">
             &copy;{(new Date().getFullYear())} Ceanul Mic. Toate drepturile rezervate.</h1>
         </div>
     );
