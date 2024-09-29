@@ -12,16 +12,25 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollY, setPrevScrollY] = useState(0);
+  const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Show navbar if scrolling up, hide if scrolling down
-      if (currentScrollY < prevScrollY) {
+      // Check if the user is at the top of the page
+      if (currentScrollY <= 90) {
         setIsVisible(true);
+        setIsTop(true);
       } else {
-        setIsVisible(false);
+        setIsTop(false);
+
+        // Show navbar if scrolling up, hide if scrolling down
+        if (currentScrollY < prevScrollY) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
       }
 
       setPrevScrollY(currentScrollY);
@@ -35,7 +44,7 @@ const Navbar = () => {
   }, [prevScrollY]);
 
   return (
-    <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden}`}>
+    <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden} ${isTop ? styles.atTop : ''}`}>
       <div className={styles.logo}>
         <Image src={images.logo} className={styles.image} alt="logo" width={80} height={80} />
       </div>
