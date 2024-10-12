@@ -75,7 +75,8 @@ const Menu = () => {
         <div id="menu" className={styles.menu}>
             <h1 className="cormorant-title">Meniu</h1>
             <div ref={lottieContainerRef} className={styles.lottie} />
-            <a className={styles.button} href="/menu.pdf">Vreau sa vad meniul</a>
+            <a className={styles.button} href="/menu.pdf">Vreau să vad meniul</a>
+            <h1 className="cormorant-h1">La cererea clienților putem pregăti meniuri de pomană sau alte evenimente</h1>
         </div>
     );
 };

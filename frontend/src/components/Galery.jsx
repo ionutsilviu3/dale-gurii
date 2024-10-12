@@ -12,7 +12,7 @@ const Galery = () => {
 
             <div className={styles.galeryItem}>
                 <Image src={images.galeryFood1} className={styles.galeryImage} alt="Seafood" />
-                <h1 className="cormorant-h1">Pulpa de porc la gratar</h1>
+                <h1 className="cormorant-h1">Pulpă de porc la grătar</h1>
             </div>
 
             <div className={styles.galeryItem}>
@@ -22,7 +22,7 @@ const Galery = () => {
 
             <div className={styles.galeryItem}>
                 <Image src={images.galeryFood3} className={styles.galeryImage} alt="American Burger" />
-                <h1 className="cormorant-h1">Salata Caesar</h1>
+                <h1 className="cormorant-h1">Salată Caesar</h1>
             </div>
 
             <div className={styles.galeryItem}>
