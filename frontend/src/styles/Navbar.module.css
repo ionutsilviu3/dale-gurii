@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: var(--color-black);
     padding: 1rem 2rem;
     position: fixed; /* Keep the navbar fixed at the top */
     top: 0; /* Initially at the top */
@@ -42,12 +42,12 @@
 .links li {
     margin: 0 1rem;
     cursor: pointer;
-    color: white;
+    color: var(--color-white);
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .links li:hover {
-    color: var(--color-orange); /* Change to your custom color on hover */
+    color: var(--color-blue); /* Change to your custom color on hover */
 }
 
 .smallscreen {
@@ -78,7 +78,7 @@
 
 
 .overlayClose {
-    color: var(--color-orange);
+    color: var(--color-blue);
     cursor: pointer;
     position: absolute;
     top: 20px;

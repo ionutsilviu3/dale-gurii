@@ -1,5 +1,32 @@
-.image {
+.header {
+    position: relative;
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically (optional, depending on content) */
+}
+
+.image {
+    width: 100%; /* Full width on mobile */
+    height: auto;
     padding-top: 90px;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .image {
+        width: 64%; /* Adjust the width for desktop (smaller than 100%) */
+        height: auto;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .image {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+        padding-top: 90px;
+    }
 }

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row; /* Default to horizontal layout on desktop */
     justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center items vertically */
+    align-items: flex-start; /* Align items at the top */
     padding: 2rem; /* Add padding for better spacing */
     margin-top: 32px; /* Top margin to separate from other content */
     margin-left: auto;
@@ -13,10 +13,12 @@
 
 .contact > div {
     display: flex;
-    flex-direction: column; /* Stack icon and text vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align icon and h1 at the top */
     margin: 10px; /* Add spacing between sections */
     flex: 1; /* Allow items to grow equally */
+    min-height: 200px; /* Optional: Ensures consistent height for sections */
 }
 
 .image {
@@ -25,21 +27,27 @@
     margin-bottom: 10px; /* Space below icon */
 }
 
+.contact h1 {
+    margin-bottom: 10px; /* Space below h1 */
+    text-align: center;
+}
+
 .contact h2 {
-    text-align: center; /* Center text */
+    margin-top: 10px; /* Ensure spacing between h1 and h2 */
+    text-align: center; /* Center the h2 text */
+    display: block; /* Ensure h2 behaves as a block-level element */
+    width: 100%; /* Ensures full-width centering */
 }
 
 .contactClickable a {
     text-decoration: none; /* Remove underline from links */
     text-align: center; /* Center link text */
+    margin-top: 10px; /* Space between the h1 and link */
+    display: block; /* Ensure the link behaves as a block-level element */
 }
 
 .contactClickable a:hover {
-    color: var(--color-orange); /* Color change on hover */
-}
-
-.contact h1 {
-    padding-bottom: 6px;
+    color: var(--color-blue); /* Color change on hover */
 }
 
 /* Media Queries */

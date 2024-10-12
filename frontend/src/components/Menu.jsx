@@ -75,7 +75,7 @@ const Menu = () => {
         <div id="menu" className={styles.menu}>
             <h1 className="cormorant-title">Meniu</h1>
             <div ref={lottieContainerRef} className={styles.lottie} />
-            <a className={styles.button} href="/meniu.pdf">Vreau sa vad meniul</a>
+            <a className={styles.button} href="/menu.pdf">Vreau sa vad meniul</a>
         </div>
     );
 };

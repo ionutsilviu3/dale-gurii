@@ -47,6 +47,7 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden} ${isTop ? styles.atTop : ''}`}>
       <div className={styles.logo}>
         <Image src={images.logo} className={styles.image} alt="logo" width={80} height={80} />
+        <h1></h1>
       </div>
 
       <ul className={styles.links}>

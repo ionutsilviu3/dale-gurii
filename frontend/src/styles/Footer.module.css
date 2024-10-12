@@ -2,9 +2,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
+    align-items: center; /* Center the h1 and the social div */
+    padding: 1rem;
+    position: relative; /* To allow absolute positioning of ANPC */
 }
 
 .social {
@@ -14,8 +14,38 @@
     padding: 1rem 0rem;
 }
 
+.ANPC {
+    position: absolute;
+    right: 0; /* Align to the far right */
+    top: 50%; /* Vertically center the ANPC div with the social div */
+    transform: translateY(-50%); /* Adjust positioning to vertically center */
+    display: flex;
+    flex-direction: column; /* Stack the SAL and SOL images vertically */
+    align-items: center;
+    padding-right: 24px;
+}
+
 .image {
     width: 40px;
     height: 40px;
     margin: 20px;
+}
+
+.SAL {
+    width: 120px;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between SAL and SOL images */
+}
+
+.opensans-footer {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Space above the footer text */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer {
+        align-items: center; /* Ensure everything stays centered on mobile */
+    }
+
 }

@@ -14,12 +14,12 @@
   --line-height-h2: 36px;
 
   --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
+  --color-black: black;
   --color-gray: #545454;
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
-  --color-orange: #e3661f;
+  --color-blue: #38b6ff;
 }
 
 * {
