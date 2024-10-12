@@ -16,7 +16,7 @@ const Contact = () => {
             <Image src={images.adressIcon} className={styles.image} alt="Adress"/>
             <h1 className="cormorant-h1">Adresa</h1>
             <div className={styles.contactClickable}>
-            <a className="cormorant-h2" href='https://www.google.com/maps/search/Blvd+Nicolae+B%C4%83lcescu+nr+90+Pogoanele/@45.1467484,26.8095721,16z?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D'>Pogoanele <br></br> Blvd. Nicolae Bălcescu <br></br>Nr. 90</a>
+            <a className="cormorant-h2" href='https://maps.app.goo.gl/Jm923JWDPCnLDp5fA'>Pogoanele <br></br> Blvd. Nicolae Bălcescu <br></br>Nr. 90</a>
            </div>
             </div>
             
