@@ -22,6 +22,7 @@
     height: auto; /* Maintain aspect ratio of the images */
 }
 
-.galeryItem h1 {
+.galeryItem h2 {
     margin-top: 1rem; /* Add some space between the image and its corresponding title */
+    margin-bottom: 2rem;
 }

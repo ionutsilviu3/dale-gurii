@@ -4,8 +4,14 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div id="home" className={styles.header}>
-            <Image src={images.header} className={styles.image} priority={true} alt="Food" />        </div>
+        <header id="home" className={styles.header}>
+            <Image 
+                src={images.header} 
+                className={styles.image} 
+                priority={true} 
+                alt="Mancare delicioasa la restaurantul D'ale Gurii"
+            />
+        </header>
     );
 };
 

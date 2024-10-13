@@ -4,29 +4,36 @@
     height: auto;
     display: flex;
     justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically (optional, depending on content) */
+    align-items: center; /* Center the image vertically (if needed) */
+    padding-top: 90px; /* Add padding consistently */
 }
 
 .image {
-    width: 100%; /* Full width on mobile */
-    height: auto;
-    padding-top: 90px;
+    width: 100%; /* Full width of the container */
+    height: auto; /* Preserve aspect ratio */
 }
 
 /* Desktop Styles */
 @media (min-width: 769px) {
+    .header {
+        padding-top: 120px; /* Adjust padding on larger screens for a better layout */
+    }
+
     .image {
-        width: 64%; /* Adjust the width for desktop (smaller than 100%) */
-        height: auto;
-        margin: 0 auto; /* Center the image horizontally */
+        width: 64%; /* Reduced width on larger screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center horizontally */
     }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .header {
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+
     .image {
-        width: 100%; /* Full width on mobile */
-        height: auto;
-        padding-top: 90px;
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Maintain aspect ratio */
     }
 }

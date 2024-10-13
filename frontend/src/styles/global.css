@@ -69,7 +69,7 @@ a {
 /* Corrected Cormorant font styles */
 
 /* Title style for large text */
-.cormorant-title {
+.cormorantTitle {
   font-family: var(--font-base);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
@@ -80,7 +80,7 @@ a {
 }
 
 /* Heading 1 style */
-.cormorant-h1 {
+.cormorantH1 {
   font-family: var(--font-base);
   font-size: var(--font-size-h1);
   line-height: var(--line-height-h1);
@@ -89,7 +89,7 @@ a {
 }
 
 /* Heading 2 style */
-.cormorant-h2 {
+.cormorantH2 {
   font-family: var(--font-base);
   font-size: var(--font-size-h2);
   line-height: var(--line-height-h2);
@@ -122,34 +122,34 @@ a {
 
 /* Responsive adjustments */
 @media screen and (min-width: 2000px) {
-  .cormorant-title {
+  .cormorantTitle {
     font-size: 72px;
     line-height: 82px;
   }
 
-  .cormorant-h1 {
+  .cormorantH1 {
     font-size: 60px;
     line-height: 70px;
   }
 
-  .cormorant-h2 {
+  .cormorantH2 {
     font-size: 50px;
     line-height: 60px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .cormorant-title {
+  .cormorantTitle {
     font-size: 32px;
     line-height: 50px;
   }
 
-  .cormorant-h1 {
+  .cormorantH1 {
     font-size: 24px;
     line-height: 40px;
   }
 
-  .cormorant-h2 {
+  .cormorantH2 {
     font-size: 22px;
     line-height: 35px;
   }

@@ -1,65 +1,86 @@
 .contact {
-    width: 100%; /* Use full width on mobile */
-    max-width: 1200px; /* Optional: limit the max width for larger screens */
+    width: 100%; /* Full width on mobile */
+    max-width: 1200px; /* Limit max width on larger screens */
     display: flex;
-    flex-direction: row; /* Default to horizontal layout on desktop */
-    justify-content: space-between; /* Space items evenly */
+    flex-direction: row; /* Horizontal layout on desktop */
+    justify-content: space-between; /* Space between each section */
     align-items: flex-start; /* Align items at the top */
-    padding: 2rem; /* Add padding for better spacing */
-    margin-top: 32px; /* Top margin to separate from other content */
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem; /* Padding for content spacing */
+    margin: 32px auto; /* Center the section with margin */
+    gap: 2rem; /* Consistent gap between sections */
 }
 
-.contact > div {
+.contact > div,
+.contact address {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align icon and h1 at the top */
-    margin: 10px; /* Add spacing between sections */
-    flex: 1; /* Allow items to grow equally */
-    min-height: 200px; /* Optional: Ensures consistent height for sections */
+    align-items: center; /* Center align content in each section */
+    justify-content: flex-start; /* Align content to the top */
+    margin: 10px; /* Extra space between sections */
+    flex: 1; /* Allow sections to grow equally */
+    min-height: 200px; /* Consistent minimum height */
+    padding: 1rem; /* Padding inside each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.contact > div:hover,
+.contact address:hover {
+    transform: translateY(-5px); /* Lift the section on hover */
 }
 
 .image {
-    width: 50px; /* Icon size */
+    width: 50px; /* Size of the icons */
     height: 50px;
-    margin-bottom: 10px; /* Space below icon */
-}
-
-.contact h1 {
-    margin-bottom: 10px; /* Space below h1 */
-    text-align: center;
+    margin-bottom: 10px; /* Spacing below the icon */
 }
 
 .contact h2 {
-    margin-top: 10px; /* Ensure spacing between h1 and h2 */
-    text-align: center; /* Center the h2 text */
-    display: block; /* Ensure h2 behaves as a block-level element */
-    width: 100%; /* Ensures full-width centering */
+    margin-bottom: 10px; /* Spacing below h2 */
+    text-align: center;
+    font-size: 1.5rem; /* Larger font size for better readability */
+    font-weight: bold;
+    color: var(--color-white); /* Optional color */
+}
+
+.contact h3 {
+    margin-top: 10px; /* Spacing above h3 */
+    text-align: center;
+    font-size: 1.2rem; /* Adjusted font size for readability */
+    color: var(--color-white); /* Optional color */
+}
+
+.contactClickable {
+    text-align: center; /* Center align the clickable text */
+    margin-top: 10px; /* Space above the link */
 }
 
 .contactClickable a {
-    text-decoration: none; /* Remove underline from links */
-    text-align: center; /* Center link text */
-    margin-top: 10px; /* Space between the h1 and link */
-    display: block; /* Ensure the link behaves as a block-level element */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link behave like a block */
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: 500; /* Medium weight for emphasis */
+    color: var(--color-white); /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .contactClickable a:hover {
     color: var(--color-blue); /* Color change on hover */
 }
 
-/* Media Queries */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .contact {
         flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center items */
+        align-items: center; /* Center the items */
+        gap: 1rem; /* Reduce gap between sections */
     }
 
-    .contact > div {
-        width: 100%; /* Allow items to take full width */
+    .contact > div,
+    .contact address {
+        width: 100%; /* Full width for each section */
         padding-bottom: 30px;
-        margin: 15px 0; /* Add spacing between sections */
+        margin: 15px 0; /* Extra spacing between sections */
     }
 }
